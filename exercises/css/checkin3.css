@@ -1,0 +1,50 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    display:grid
+}
+
+.wrapper {
+    border: 3px solid black; 
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    min-height: 100vh;
+}
+
+header {
+    background-color: azure;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.emptyspaceleft {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.emptyspaceright {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+}
+
+address {
+    font-style: normal;
+}
