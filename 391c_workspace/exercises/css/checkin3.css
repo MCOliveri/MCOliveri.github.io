@@ -1,0 +1,92 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 50vh; 
+    flex: 1;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    min-height: 50vh; 
+    flex: 1;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.emptyspaceleft {
+    background-color: black;
+    color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyspaceright {
+    background-image: url(https://raw.githubusercontent.com/MCOliveri/MCOliveri.github.io/refs/heads/main/images/image.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.oneofthree {
+    background-color: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.twoofthree {
+    background-image: url(https://raw.githubusercontent.com/MCOliveri/MCOliveri.github.io/refs/heads/main/images/Cprogcopy.jpg);
+    background-color: lightgreen;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+
+.threeofthree {
+    background-color: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    float: left;
+}
+
+.imgwrap {
+    float:right;
+}
+
+main {
+    background-color: white;
+    padding: 2rem;
+}
