@@ -1,7 +1,8 @@
 h1 {
     color: darkblue;
-    font-family: "Big Shoulders", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
 }
 
 h2 {
