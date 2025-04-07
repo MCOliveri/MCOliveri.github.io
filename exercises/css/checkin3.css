@@ -1,23 +1,36 @@
 body {
     background-color: lightgray;
     margin: 0;
-    display:grid
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0
 }
 
 .wrapper {
-    border: 3px solid black; 
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    min-height: 100vh;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 50vh; 
+    flex: 1;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    min-height: 50vh; 
+    flex: 1;
 }
 
 header {
-    background-color: azure;
+    background-color: darkblue;
+    color: white;
     grid-row-start: 1;
-    grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
 h1 {
@@ -25,19 +38,52 @@ h1 {
 }
 
 .emptyspaceleft {
-    background-color: white;
+    background-color: black;
+    color: white;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .emptyspaceright {
-    background-color: white;
+    background-image: url(https://raw.githubusercontent.com/MCOliveri/MCOliveri.github.io/refs/heads/main/images/image.jpeg);
+    background-size: cover;
+    background-position: center;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 5;
+}
+
+.oneofthree {
+    background-color: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.twoofthree {
+    background-image: url(https://raw.githubusercontent.com/MCOliveri/MCOliveri.github.io/refs/heads/main/images/Cprogcopy.jpg);
+    background-color: lightgreen;
+    background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+
+.threeofthree {
+    background-color: lightskyblue;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    float: left;
+}
+
+.imgwrap {
+    float:right;
 }
 
 main {
