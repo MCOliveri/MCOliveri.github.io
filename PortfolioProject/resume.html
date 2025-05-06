@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Resume</title>
-    <link href="projectcss/resume.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link href="projectcss/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Résumé</h1>
-        <h2 class="logo"><a href="#">MO</a></h2>
-        <nav>
-            <ul>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="portfoliolanding.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="exercises.html">Exercises</a></li>
-                <li><a href="home.html">Home</a></li>
-              </ul>
-        </nav>
-    </header>
+<body class="subpage">
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="aboutme.html" class="active">About</a></li>
+      <li><a href="portfoliolanding.html">Portfolio</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="text-box">
+      <h1>Résumé</h1>
+    </div>
+  </header>
 
     <main>
-
-    <div class="wrapper">
-
-    </div>
-
+        <div class="wrapper">
+            <article>
+                <h2>My Resume:</h2>
+                <!-- Embed the resume PDF -->
+                <iframe src="Resume(updated).pdf" width="100%" height="800px"></iframe>
+                <!-- OR use <embed> if you prefer -->
+                <!-- <embed src="resume.pdf" width="100%" height="800px" type="application/pdf" /> -->
+            </article>
+        </div>
     </main>
 
-    <footer>Footer</footer>
-
+    <footer>
+        <p>© 2025 - All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
