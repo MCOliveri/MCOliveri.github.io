@@ -48,7 +48,6 @@ nav a:active {
 /* home specific body alterations */
 body.home {
   height: 100vh; /* body takes up ful viewport */
-  overflow: hidden; /* prevents scrolling on page since there is no content outside that would require scrolling */
 }
 
 /* Default (home page) header */
