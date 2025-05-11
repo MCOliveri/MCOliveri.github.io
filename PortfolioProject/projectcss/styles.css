@@ -158,6 +158,12 @@ article a:active {
   border: 1px solid #ccc;
 }
 
+.bg-credit {
+  font-size: 0.8rem;
+  color: #cac8c8;
+  margin-top: 0.2rem;
+}
+
 /* Footer styling */
 footer {
   /* REMOVE position: fixed */
