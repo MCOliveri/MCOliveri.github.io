@@ -140,6 +140,24 @@ article a:active {
   color: orangered;
 }
 
+.article-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.article-text {
+  flex: 1; /* Take up remaining space */
+}
+
+.article-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 /* Footer styling */
 footer {
   /* REMOVE position: fixed */
