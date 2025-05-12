@@ -185,3 +185,17 @@ footer {
   border-top: 1px solid #444;
   color: #ccc;
 }
+
+/* Footer link styling to match navbar behavior */
+footer a {
+  color: #ccc; /* default color of links in footer */
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffd700; /* match navbar hover color */
+}
+
+footer a:active {
+  color: orangered; /* match navbar activated color */
+}
