@@ -32,7 +32,6 @@ def load_text(file_path):
 
 # Function to extract adjectives from a block of text
 def extract_adjectives(text):
-
     words = word_tokenize(text)  # Break the text into word tokens
     tagger = PerceptronTagger()  # Initialize POS tagger
     tagged = tagger.tag(words)   # Assign POS tags to each token
