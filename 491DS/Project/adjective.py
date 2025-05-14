@@ -15,15 +15,6 @@ nltk.data.path.append('/Users/michaeloliveri/nltk_data')  # Add the download dir
 
 # Function to load and clean a text file
 def load_text(file_path):
-    """
-    Reads a text file and optionally strips out Project Gutenberg headers/footers.
-
-    Parameters:
-        file_path (str): Path to the text file.
-
-    Returns:
-        str: Cleaned text content.
-    """
     with open(file_path, 'r', encoding='utf-8') as file:
         text = file.read()
 
@@ -41,15 +32,7 @@ def load_text(file_path):
 
 # Function to extract adjectives from a block of text
 def extract_adjectives(text):
-    """
-    Tokenizes text and extracts adjectives using part-of-speech tagging.
 
-    Parameters:
-        text (str): Input text to analyze.
-
-    Returns:
-        list: A list of lowercase adjectives found in the text.
-    """
     words = word_tokenize(text)  # Break the text into word tokens
     tagger = PerceptronTagger()  # Initialize POS tagger
     tagged = tagger.tag(words)   # Assign POS tags to each token
